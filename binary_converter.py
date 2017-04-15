@@ -19,7 +19,7 @@ if numbertype == decimal:  #decimal to binary conversion using divide by 2 metho
     if binary[0] == '0':  
         binary.pop(0)
     binary = "".join(binary)
-    print(binary)
+    print(binary, str(2))
 
 elif numbertype == binary:  #binary to decimal conversion using sum of weighter digits
     dec = 0
@@ -36,7 +36,7 @@ elif numbertype == binary:  #binary to decimal conversion using sum of weighter 
             if char == '1':
                 dec += 2**n
             n -= 1
-        print(dec)
+        print(dec, str(10))
 else:
     print("Wrong type inputed")
 
